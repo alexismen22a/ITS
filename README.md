@@ -1,7 +1,22 @@
 # ITS (IMAGE TO SPEECH)
-Mission: The idea of this project is to design a software "FREE TO USE AND WITHOUT POP OUT ADDS AND WITHOUT RESTRICTIONS INSIDE THE MAIN FUNCTIONS"
-who: for users, parents and professional providers who require a mobile program to provide a way to communicate and understand with a person with non-verbal ability.
+ITS is a tool which allows the verbally impaired to communicate to others rapidly by selecting images to produce sounds. 
 
-where :The implementation of this software is expected to be on IOS, IPAD OS, and Android from the current version from 01/01/2022 and future updates. The program will never charge for functionality, and any modification of this software will not restrict the functionality. 
+##### ITS aims to be
+- open source and free of cost to all
+- Free of ads or paywalls that restrict functionality
+- Easy to install and use for anyone.
+- Flexible and extensible to suit the needs of many users. 
+- Cross-platform starting with android/ios/web
+- Funded by donations
 
- It will be an option for a developer to implement a Help developers area with donations or watch an ad to help developers but will never show an ad without the end-user's consent and will never show an ad outside the Help developer area.
+##### Where ITS might be used
+- Families
+- Schools
+- Professional health settings
+
+#### Why?
+
+Most tools available that serve the functionality of this program are either 
+- very expensive with a monthly subscription
+- Are riddled with ads that diminish the purpose of the program
+- Not cross platform and accessible to all

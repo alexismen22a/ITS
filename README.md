@@ -20,3 +20,7 @@ Most tools available that serve the functionality of this program are either
 - very expensive with a monthly subscription
 - Are riddled with ads that diminish the purpose of the program
 - Not cross platform and accessible to all
+
+#### Wiki
+FOr more information on planned features and design specifics please see the Wiki
+https://github.com/alexismen22a/ITS/wiki

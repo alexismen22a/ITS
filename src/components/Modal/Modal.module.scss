@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.modal {
+  padding: 2rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+  background-color: $ITS-primary-base;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 1rem rgba($ITS-primary-light, 0.2);
+  z-index: 100000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($ITS-primary-base, 50%);
+  z-index: 99999;
+}

@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+.options {
+  display: block;
+  padding: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $ITS-secondary-base;
+  border: 0;
+}

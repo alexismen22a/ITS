@@ -1,0 +1,9 @@
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    justify-items: flex-start;
+    align-items: center;
+    gap: .5rem;
+    font-size: 0.8rem;
+}

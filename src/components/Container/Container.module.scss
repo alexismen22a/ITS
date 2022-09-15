@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.mainContainer {
+  display: grid;
+  padding: 4rem $x-padding/2 2rem $x-padding/2;
+  width: 100vw;
+  min-height: 100vh;
+
+  grid-template-columns: repeat($btns-amount, 1fr);
+  gap: $btns-gap;
+}

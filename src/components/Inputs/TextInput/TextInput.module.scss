@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: $modal-row-gap;
+}
+
+.labelInput {
+  font-size: 0.8rem;
+}
+
+.textInput {
+  padding: 0.2rem 0.4rem;
+  background-color: $ITS-primary-light;
+  border-width: 0.15rem;
+  border-style: solid;
+  border-color: white;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: $ITS-primary-base;
+}

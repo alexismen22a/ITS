@@ -1,9 +1,10 @@
+@import '../../../../styles/variables';
 
 .container {
-    display: flex;
-    flex-grow: 1;
-    justify-items: flex-start;
-    align-items: center;
-    gap: .5rem;
-    font-size: 0.8rem;
+  display: flex;
+  flex-grow: 1;
+  justify-items: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
 }

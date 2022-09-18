@@ -1,18 +1,16 @@
 $ITS-primary-base: #4361ee;
 $ITS-primary-light: #b5bff2;
 $ITS-secondary-base: #fcdc4d;
-// $ITS-secondary-light: #4361EE;
+$ITS-secondary-light: #ffefa8;
 $ITS-terciary-base: #f95738;
 // $ITS-terciary-light: #4361EE;
 
 $btns-amount: 5;
 $btns-gap: 2rem;
 $x-padding: 4rem;
-$audio-btn-size: calc(
-  (100vw - ((($btns-amount - 1) * $btns-gap) + $x-padding)) / $btns-amount
-);
+$audio-btn-size: calc((100vw - ((($btns-amount - 1) * $btns-gap) + $x-padding)) / $btns-amount);
 
-$modal-columns: repeat(4, 1fr);
-$modal-rows: repeat(8, 1fr);
+$modal-columns: repeat(4, minmax(0, 1fr));
+$modal-rows: repeat(8, minmax(0, 1fr));
 $modal-col-gap: 2rem;
 $modal-row-gap: 0.5rem;

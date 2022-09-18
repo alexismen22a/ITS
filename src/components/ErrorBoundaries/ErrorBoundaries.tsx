@@ -1,13 +1,21 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component, ErrorInfo } from 'react';
 
-class ErrorBoundary extends Component {
-  constructor(props) {
+interface Props {
+  children: JSX.Element | Array<JSX.Element>;
+}
+
+interface State {
+  error: Error | null;
+  errorInfo: ErrorInfo | null;
+}
+
+class ErrorBoundary extends Component<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.state = { error: null, errorInfo: null };
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     // Catch errors in any components below and re-render with error message
     this.setState({
       error: error,
@@ -22,7 +30,7 @@ class ErrorBoundary extends Component {
       return (
         <div>
           <h2>Something went wrong.</h2>
-          <details style={{ whiteSpace: "pre-wrap" }}>
+          <details style={{ whiteSpace: 'pre-wrap' }}>
             {this.state.error && this.state.error.toString()}
             <br />
             {this.state.errorInfo.componentStack}
@@ -34,12 +42,5 @@ class ErrorBoundary extends Component {
     return this.props.children;
   }
 }
-
-ErrorBoundary.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element),
-  ]),
-};
 
 export default ErrorBoundary;

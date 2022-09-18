@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .modal {
   padding: 2rem;
@@ -10,7 +10,20 @@
   background-color: $ITS-primary-base;
   border-radius: 1rem;
   box-shadow: 0 0 1rem 1rem rgba($ITS-primary-light, 0.2);
+  overflow: hidden;
   z-index: 100000;
+}
+
+.exit {
+  width: 2.5rem;
+  padding: 0.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $ITS-terciary-base;
+  color: white;
+  border: 0;
+  cursor: pointer;
 }
 
 .overlay {

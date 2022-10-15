@@ -1,0 +1,80 @@
+@import '../../../styles/variables';
+
+.fieldset {
+  border: 0;
+}
+
+.legend {
+  padding-bottom: 0.5rem;
+}
+
+.imgContainer {
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 1 / span 4;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgCover {
+  position: absolute;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  object-fit: cover;
+  background-color: white;
+  &:active,
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.radioInputs {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  grid-column: 2 / 3;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: $ITS-secondary-base;
+  color: $ITS-primary-base;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $ITS-secondary-light;
+  }
+}
+.firstChild {
+  grid-row: 1 / span 2;
+}
+.secondChild {
+  grid-row: 3 / span 2;
+}
+
+.deleteImage {
+  display: flex;
+  margin-bottom: 0.4rem;
+  padding: 0.2rem;
+  grid-column: 1 / 2;
+  grid-row: -3 / span 2;
+  justify-content: center;
+  align-items: center;
+  background-color: $ITS-terciary-base;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $ITS-secondary-base;
+  }
+}
+
+.hidden {
+  display: none;
+}

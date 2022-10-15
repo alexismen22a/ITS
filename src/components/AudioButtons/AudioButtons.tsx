@@ -1,19 +1,17 @@
 import React from 'react';
 
-import AudioBtn from './AudioBtn/AudioBtn';
-import AddAudioButton from './AddAudioBtn/AddAudioBtn';
-
-interface Buttons {
-  name: string;
-  img: string;
-}
+import { useAppSelector } from 'src/hooks/redux';
+import AudioBtn from 'src/components/AudioButtons/AudioBtn/AudioBtn';
+import AddAudioButton from 'src/components/AudioButtons/AddAudioBtn/AddAudioBtn';
+import { selectButtons } from 'src/components/AudioButtons/audioButtonsSlice';
 
 export default function AudioButtons() {
-  const buttons: Array<Buttons> = new Array(12).fill({ name: 'example', img: 'example.png' });
+  const buttons = useAppSelector(selectButtons);
+
   return (
     <>
-      {buttons.map((btn, index) => {
-        return <AudioBtn key={`audioBtn${index}`} imgUrl={btn.img}></AudioBtn>;
+      {buttons.map((btn) => {
+        return <AudioBtn key={btn.id} btn={btn}></AudioBtn>;
       })}
       <AddAudioButton />
     </>

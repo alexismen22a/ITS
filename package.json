@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@capacitor-community/text-to-speech": "^2.0.1",
     "@capacitor/android": "^4.1.0",
     "@capacitor/core": "^4.1.0",
     "@capacitor/device": "^4.0.1",
@@ -19,6 +20,7 @@
     "react-redux": "^8.0.2",
     "react-scripts": "5.0.1",
     "sass": "^1.54.8",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

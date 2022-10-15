@@ -4,7 +4,7 @@ import React from 'react';
 
 import ErrorBoundary from 'src/components/ErrorBoundaries/ErrorBoundaries';
 import Container from 'src/components/Container/Container';
-import OptionsBtn from 'src/components/OptionsBtn/OptionsBtn';
+import Options from 'src/components/Options/Options';
 import AudioButtons from 'src/components/AudioButtons/AudioButtons';
 
 // interface DeviceInfo {
@@ -32,7 +32,7 @@ export default function App() {
     <>
       <Container>
         <ErrorBoundary>
-          <OptionsBtn />
+          <Options />
         </ErrorBoundary>
         <ErrorBoundary>
           <AudioButtons />

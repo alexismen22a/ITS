@@ -4,7 +4,7 @@ import { useFormContext } from 'react-hook-form';
 import styles from './RadioInput.module.scss';
 import { CapText } from '../../../../utils/functions';
 
-export interface RadioInputProps {
+interface RadioInputProps {
   id: string;
   value: string;
   registerAs?: boolean;
@@ -29,7 +29,7 @@ export default function RadioInput({
       <input
         type="radio"
         id={id}
-        {...(registerAs && name ? register(name) : { name: name })}
+        {...(registerAs && name ? register(name, { required: true }) : { name: name })}
         {...props}
       />
       {children && (

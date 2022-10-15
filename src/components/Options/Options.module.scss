@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .options {
   display: block;
@@ -10,4 +10,5 @@
   right: 0;
   background-color: $ITS-secondary-base;
   border: 0;
+  cursor: pointer;
 }

@@ -11,7 +11,9 @@ interface TextInputProps {
   label?: string;
   placeholder?: string;
   type?: 'primary' | 'secondary';
-  [x: string]: any;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
+  case?: string;
 }
 
 interface ConditionalAttributes {
@@ -26,7 +28,8 @@ function TextInput({
   label,
   placeholder,
   type = 'primary',
-  ...props
+  onChange,
+  value,
 }: TextInputProps) {
   const { register } = useFormContext();
   let conditionalAttributes: ConditionalAttributes = {};
@@ -51,7 +54,7 @@ function TextInput({
         id={id}
         className={`${styles.textInput} ${styles[type]}`}
         {...conditionalAttributes}
-        {...props}
+        {...(onChange && value ? { value: value, onChange: onChange } : {})}
       />
     </div>
   );

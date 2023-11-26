@@ -5,8 +5,9 @@ import { Button } from "@src/components";
 
 interface item {
   tittle: string;
-  url: string;
   img: string;
+  url?: string;
+  audio?: string;
 }
 
 interface GridProps {
@@ -17,8 +18,8 @@ interface GridProps {
 const Grid: FC<GridProps> = ({ spacing = 2, items }) => {
   return (
     <MuiGrid container spacing={spacing} className={styles.grid}>
-      {items.map(({ tittle, url, img }) => (
-        <Button tittle={tittle} url={url} img={img} key={tittle} />
+      {items.map((item) => (
+        <Button key={item.tittle} {...item} />
       ))}
     </MuiGrid>
   );

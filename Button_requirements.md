@@ -5,6 +5,9 @@
    - No
    - Tal vez
    - No sé
+   - Gracias
+   - Por favor
+   - Lo siento
 
 2. **Necesidades Físicas:**
    - Tengo hambre
@@ -44,6 +47,4 @@
 7. **Interacción Social:**
    - Quiero hablar con alguien
    - Necesito espacio
-   - Gracias
-   - Por favor
-   - Lo siento
+

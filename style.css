@@ -1,0 +1,48 @@
+/* style.css */
+button {
+    font-size: 20px;
+    padding: 10rem 20rem;
+    margin: 10px;
+}
+
+#yesButton {
+    background-color: lightgreen;
+}
+
+#noButton {
+    background-color: lightcoral;
+}
+
+#result {
+    font-size: 30px;
+    margin-top: 20px;
+}
+/* Style for the navigation menu */
+#topMenu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+#topMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#topMenu li {
+    float: left;
+}
+
+#topMenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 24px; /* Increased padding for larger menu items */
+    text-decoration: none;
+    font-size: 20px; /* Larger font size for menu text */
+}
+
+/* Change the link color to #111 (dark grey) on hover */
+#topMenu li a:hover {
+    background-color: #111;
+}

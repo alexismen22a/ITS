@@ -6,8 +6,8 @@ const buttonInfo = [
   {
     tittle: "Respuestas Básicas",
     img: "/assets/respuestas.png",
-    // url: "/respuestas-basicas",
-    audio: "/assets/music.wav",
+    url: "/respuestas-basicas",
+    //audio: "/assets/Si.mp3",
   },
   {
     tittle: "Necesidades Físicas",
